@@ -10,5 +10,135 @@ body {
 
 }
 
+/* header */
+.header-webstudio {
+    color: var();
+    font-weight: 700;
+font-size: 26px;
+letter-spacing: 0.03em;
+}
 
+.header-studio {
+    color: var(--accient-color);
+    font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+}
+
+.header-page {
+    color: var(--text-color);
+    font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+}
+
+.header-gmail {
+    color: var(--accient-color);
+    font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+}
+
+.header-tell {
+      font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: var(--text-color);
+}
+
+/* hero */
+.hero-title {
+    font-weight: 900;
+font-size: 44px;
+line-height: 136%;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-align: center;
+color: var(--text-color);
+}
+
+
+.hero-get-it {
+    font-weight: 700;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.06em;
+text-align: center;
+color: var(--additionaltext-color);
+}
+
+
+/* info */
+.info-subtitle {
+    font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--text-color);
+}
+
+.info-text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+/* work */
+.work-title {
+    font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--text-color);
+}
+
+
+/* team */
+.team-header {
+    font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--text-color);
+}
+
+.team-name {
+    font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--text-color);
+}
+
+/* footer */
+.footer-webstudio {
+    font-weight: 700;
+font-size: 26px;
+letter-spacing: 0.03em;
+color: var(--additionaltext-color);
+}
+
+.footer-adress {
+    font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: var(--additionaltext-color);
+}
+.footer-mail {font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+.footer-tell {
+    font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
 
