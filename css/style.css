@@ -10,6 +10,7 @@ body {
 
 }
 
+
 /* header */
 .header-webstudio {
     color: var();
@@ -17,7 +18,13 @@ body {
 font-size: 26px;
 letter-spacing: 0.03em;
 }
+.logo-web {
+    color: var(--accient-color);
+}
 
+a {
+    color: var(--text-color);
+}
 .header-studio {
     color: var(--accient-color);
     font-weight: 500;
