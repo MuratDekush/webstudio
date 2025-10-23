@@ -40,7 +40,7 @@ letter-spacing: 0.02em;
 }
 
 .header-gmail {
-    color: var(--accient-color);
+    color: var(--text-color);
     font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
