@@ -1,0 +1,68 @@
+:root {
+    --text-color: #212121;
+    --footer-background: #2F303A;
+    --accient-color: #2196F3;
+    --additionaltext-color: #FFFFFF;
+}
+
+/* header */
+.header-web {
+color:var(--accient-color);
+}
+
+.header-webstudio {
+    font-weight: 700;
+font-size: 26px;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+.header-page:hover {
+color: var(--accient-color);
+    font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: var(--text-color);
+}
+
+.header-contact:hover {
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+}
+
+/* filtration */
+.filtration-button:hover {
+    color: var(--accient-color);
+    font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+letter-spacing: 0.03em;
+text-align: center;
+}
+
+/* proect */
+.proect-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+/* footer */
+.footer-adress {
+    font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: var(--additionaltext-color);
+}
+
+.footer-contact {
+    font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+ color: rgba(255, 255, 255, 0.6);
+}

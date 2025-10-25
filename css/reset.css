@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
 }
 
-ul ol {
+ul, ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -11,6 +11,7 @@ ul ol {
 a {
     text-decoration: none;
 }
+
 button {
     cursor: pointer;
 }
