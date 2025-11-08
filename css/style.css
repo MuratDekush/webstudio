@@ -44,6 +44,9 @@ font-size: 14px;
 letter-spacing: 0.02em;
 }
 
+.header-contact:hover {
+    color: var(--accient-color);
+}
 .header-contact {
     font-weight: 500;
 font-size: 14px;
@@ -101,6 +104,13 @@ color: var(--text-color);
 
 
 /* team */
+.team-title {
+    font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--text-color);
+}
 .team-header {
     font-weight: 700;
 font-size: 36px;

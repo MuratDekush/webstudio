@@ -4,9 +4,15 @@
     --accient-color: #2196F3;
     --additionaltext-color: #FFFFFF;
 }
+body{
+    font-family: "Roboto", sans-serif;
+}
 
 /* header */
 .header-web {
+color: var(--accient-color);
+}
+.header-webstudio:hover {
 color:var(--accient-color);
 }
 
@@ -16,9 +22,10 @@ font-size: 26px;
 letter-spacing: 0.03em;
 color: var(--text-color);
 }
-
 .header-page:hover {
-color: var(--accient-color);
+color: var(--accient-color); }
+
+.header-page{
     font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -26,14 +33,20 @@ color: var(--text-color);
 }
 
 .header-contact:hover {
+color: var(--accient-color);
+}
+.header-contact {
 font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
+color: #757575;
 }
 
 /* filtration */
-.filtration-button:hover {
-    color: var(--accient-color);
+.filtration-button:hover{
+       color: var(--accient-color);
+}
+.filtration-button {
     font-weight: 500;
 font-size: 16px;
 line-height: 162%;
