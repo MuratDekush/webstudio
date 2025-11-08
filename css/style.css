@@ -7,7 +7,6 @@
 
 body {
    font-family: "Roboto", sans-serif;
-     font-family: "Raleway", sans-serif;
 
 }
 
@@ -23,6 +22,7 @@ body {
     font-weight: 700;
 font-size: 26px;
 letter-spacing: 0.03em;
+     font-family: "Raleway", sans-serif;
 }
 .logo-web {
     color: var(--accient-color);
@@ -141,6 +141,7 @@ color: #757575;
 font-size: 26px;
 letter-spacing: 0.03em;
 color: var(--additionaltext-color);
+     font-family: "Raleway", sans-serif;
 }
 
 .footer-adress {
