@@ -89,5 +89,5 @@ letter-spacing: 0.03em;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline-color: red;
+    outline: solid red;
 }
