@@ -24,7 +24,7 @@ body {
 }
 .header-list{
 
-
+display: flex;
 }
 
 .header-page:hover {
@@ -36,9 +36,17 @@ body {
   font-size: 26px;
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
+     margin-right:93px ;
 }
 .logo-web {
   color: var(--accient-color);
+}
+
+.header-page1{
+  margin-right: 50px;
+}
+.header-page2{
+  margin-right: 50px;
 }
 
 a {
@@ -72,6 +80,10 @@ a {
   color: #757575;
 }
 
+.header-mail{
+  margin-right: 50px;
+}
+
 /* hero */
 .hero {
   display: flex;
@@ -95,6 +107,14 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: var(--additionaltext-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+.hero-box{
+  display: flex;
+}
+.hero{
+background-color: var(--footer-background);
 }
 
 .hero-get-it {
@@ -113,6 +133,7 @@ a {
 /* info */
 .info {
   padding-bottom: 109px;
+  margin-top: 94px;
 }
 .info-subtitle {
   font-weight: 700;
@@ -120,6 +141,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 .info-list {
@@ -128,23 +150,27 @@ a {
 }
 
 .info-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
+font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: #757575;
 }
 
 .info-item {
   margin: 15px;
 }
 /* work */
+.work-box{
+  padding-bottom: 94px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 50px;
 }
 .work-item{
       margin-right: 30px;
@@ -158,8 +184,19 @@ a {
 
 
 /* team */
-.team{
+.team-box{
   padding-bottom: 94px;
+  padding-top: 94px;
+  
+}
+.team-img{
+  margin-bottom: 10px;
+}
+.team-name{
+  margin-bottom: 10px;
+}
+.team-work{
+  padding-bottom: 30px;
 }
 .team-title {
   font-weight: 700;
@@ -167,6 +204,8 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .team-header {
   font-weight: 700;
@@ -207,10 +246,10 @@ a {
 }
 
 .footer-webstudio {
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: var(--additionaltext-color);
+font-weight: 700;
+font-size: 26px;
+letter-spacing: 0.03em;
+color: #2196f3;
   font-family: "Raleway", sans-serif;
 }
 
@@ -242,4 +281,7 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+.footer-web{
+  color:white ;
 }
