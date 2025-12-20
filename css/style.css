@@ -12,7 +12,8 @@ body {
 .container {
   width: 1200px;
   margin: auto;
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /* header */
@@ -86,12 +87,8 @@ a {
 
 /* hero */
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 80px 20px 60px 20px;
+padding-top:200px ;
+padding-bottom: 200px;
 }
 .hero-list {
   display: flex;
@@ -107,8 +104,12 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: var(--additionaltext-color);
-  padding-bottom: 200px;
-  padding-top: 200px;
+  margin-bottom:30px ;
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .hero-box{
   display: flex;
@@ -128,6 +129,9 @@ background-color: var(--footer-background);
   padding: 12px 24px;
   cursor: pointer;
   border-radius: 4px;
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* info */
@@ -158,7 +162,7 @@ color: #757575;
 }
 
 .info-item {
-  margin: 15px;
+
 }
 /* work */
 .work-box{
