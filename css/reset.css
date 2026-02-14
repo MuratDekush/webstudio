@@ -29,3 +29,6 @@ button {
     margin-right: auto;
     outline: solid red;
 }
+img {
+display: block;
+}

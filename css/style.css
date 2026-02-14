@@ -3,17 +3,12 @@
   --footer-background: #2f303a;
   --accient-color: #2196f3;
   --additionaltext-color: #ffffff;
+  --team-bg:#F5F4FA;
+  --desk-color:#757575;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.container {
-  width: 1200px;
-  margin: auto;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 /* header */
@@ -180,30 +175,42 @@ color: #757575;
   margin-bottom: 50px;
 }
 .work-item{
-      margin-right: 30px;
+    
 }
 
 .work-list {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  gap: 30px;
 }
 
 
 /* team */
-.team-box{
+.team{
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: var(--team-bg);
   
 }
 .team-img{
-  margin-bottom: 30px;
+
+  width: 270px;
 }
 .team-name{
   margin-bottom: 10px;
+  font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color:var(--text-color);
 }
 .team-work{
-  padding-bottom: 30px;
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var();
 }
 .team-title {
   font-weight: 700;
@@ -211,8 +218,8 @@ color: #757575;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-color);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  
 }
 .team-header {
   font-weight: 700;
@@ -234,22 +241,27 @@ color: #757575;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #757575;
+  color: var(--desk-color);
 }
 .team-list {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  gap: 30px;
 }
 
-.team-item{
-   margin-right: 30px;
+.team-wrap {
+  background-color: var(--additionaltext-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 /* footer */
 
 .footer {
   background-color: var(--footer-background);
   padding: 60px;
+}
+.footer-text{
+  margin-bottom:9px ;
 }
 
 .footer-webstudio {
@@ -282,7 +294,6 @@ color: #2196f3;
   margin-bottom: 9px;
 }
 .footer-mail{
-  padding-bottom: 9px;
   font-weight: 400;
 font-size: 14px;
 line-height: 171%;
