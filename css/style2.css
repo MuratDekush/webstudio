@@ -113,6 +113,10 @@ display: flex;
 .proect-article{
 
 }
+.proect-img{
+  width: 100%;
+  
+}
 .project-wrap{
   padding: 20px 24px;
 }
@@ -122,6 +126,7 @@ display: flex;
 }
 .proect-item{
     outline: 1px solid var(--cart-border);
+flex-basis: calc((100% - 60px)/ 3);
 }
 .proect-box{
 
