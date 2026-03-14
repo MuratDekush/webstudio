@@ -149,6 +149,18 @@ background-color: var(--footer-background);
 .info-list {
   display: flex;
   gap: 30px; 
+
+}
+
+.info-item::before{
+  content: "";
+display: block;
+border-radius: 4px;
+width: 270px;
+height: 120px;
+background-color:  #f5f4fa;
+margin-bottom: 30px;
+
 }
 
 .info-text {
