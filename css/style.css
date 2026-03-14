@@ -87,6 +87,10 @@ a {
 .hero {
 padding-top:200px ;
 padding-bottom: 200px;
+background-image: url(../img/hero.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 .hero-list {
   display: flex;
@@ -107,7 +111,10 @@ padding-bottom: 200px;
   height: 120px;
   margin-left: auto;
   margin-right: auto;
-
+color: transparent;
+background-image: url(https://i.pinimg.com/originals/f9/6d/fb/f96dfb9f9d4e0b42af3888de8b9473a7.gif);
+background-clip: text;
+background-position: bottom;
 }
 .hero-box{
   display: flex;
@@ -154,7 +161,22 @@ width: 270px;
 height: 120px;
 background-color:  #f5f4fa;
 margin-bottom: 30px;
+background-image: url(../img/antenna.png);
+background-repeat: no-repeat;
+background-position: center;
 
+}
+
+.info-item:nth-child(2)::before{
+  background-image: url(../img/clock.png);
+}
+
+.info-item:nth-child(3)::before{
+  background-image: url(../img/diagram.png);
+}
+
+.info-item:nth-child(4)::before{
+  background-image: url(../img/astronaut.png);
 }
 
 
@@ -164,16 +186,6 @@ margin-bottom: 30px;
 
 }
 
-.info-item::before{
-  content: "";
-display: block;
-border-radius: 4px;
-width: 270px;
-height: 120px;
-background-color:  #f5f4fa;
-margin-bottom: 30px;
-
-}
 
 .info-text {
 font-weight: 400;
