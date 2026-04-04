@@ -12,6 +12,10 @@ body {
 }
 
 /* header */
+.header{
+padding:24px 0 25px 0;
+}
+
 .header-box{
   display: flex;    
   justify-content: space-between;
@@ -20,8 +24,7 @@ body {
 }
 .header-list{
 display: flex;
-margin-top: 32px;
-margin-bottom: 32px;
+align-items: center;
 }
 
 .header-page:hover {
@@ -34,8 +37,7 @@ margin-bottom: 32px;
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
      margin-right:93px ;
-     margin-top: 24px;
-margin-bottom: 25px;
+ 
 }
 .logo-web {
   color: var(--accient-color);
@@ -143,8 +145,8 @@ background-color: var(--footer-background);
 
 /* info */
 .info {
-  padding-bottom: 109px;
-  margin-top: 94px;
+  padding: 94px 0 94px 0;
+
 }
 .info-subtitle {
   font-weight: 700;
