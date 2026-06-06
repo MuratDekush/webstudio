@@ -5,6 +5,7 @@
   --additionaltext-color: #ffffff;
   --team-bg:#F5F4FA;
   --desk-color:#757575;
+  
 }
 
 body {
@@ -39,6 +40,22 @@ align-items: center;
      margin-right:93px ;
  
 }
+
+.header-icon-phone{
+  width: 10px;
+height: 16px; 
+  fill:var(--desk-color);
+} 
+
+
+.header-icon{
+  width: 16px;
+  height:12px;
+  fill: var(--desk-color);
+
+}
+
+
 .logo-web {
   color: var(--accient-color);
 }
@@ -73,12 +90,18 @@ a {
 
 .header-contact:hover {
   color: var(--accient-color);
+.header-icon,.header-icon-phone{
+ fill: var(--accient-color);
+}
 }
 .header-contact {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-mail{
@@ -237,7 +260,32 @@ flex-basis: calc((100% - 90px)/ 4);
   background-color: var(--team-bg);
   
 }
-
+.team-icon{
+  width: 20px;
+  height: 20px;
+  fill: var(--desk-color);
+}
+.team-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+.team-link:hover{
+  background-color: var(--accient-color);
+.team-icon{
+  fill: var(--additionaltext-color);
+}
+}
+.team-icons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
 .team-item {
   flex-basis: calc((100% - 90px)/ 4);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
