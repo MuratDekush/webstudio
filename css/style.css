@@ -16,7 +16,11 @@ body {
 .header{
 padding:24px 0 25px 0;
 }
-
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header-box{
   display: flex;    
   justify-content: space-between;
@@ -263,7 +267,7 @@ flex-basis: calc((100% - 90px)/ 4);
 .team-icon{
   width: 20px;
   height: 20px;
-  fill: var(--desk-color);
+fill:#AFB1B8;
 }
 .team-link{
   width: 44px;
@@ -353,12 +357,6 @@ color: var();
   padding-bottom: 30px;
 }
 
-.company-box{
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
 .title-company{
 margin-bottom:50px ;
 font-weight: 700;
@@ -368,17 +366,23 @@ text-align: center;
 color: #212121;
 }
 .company-icon{
-  width: 106;
+  width: 106px;
   height: 60px;
-  fill: gray;
+fill:#AFB1B8;
 }
 .company-icon:hover{
   fill: #2196f3 ;
   font-weight: 700;
 font-size: 6px;
 }
-.container{
-  padding-bottom: 94px;
+.company{
+  padding-top: 94px;
+  padding-bottom:94px ;
+}
+.list-icons{
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 /* footer */
@@ -387,6 +391,13 @@ font-size: 6px;
   background-color: var(--footer-background);
   padding-bottom: 60px;
     padding-top: 60px;
+
+}
+
+.footer .container{
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
 }
 .footer-text{
   margin-bottom:9px ;
@@ -398,8 +409,19 @@ font-size: 26px;
 letter-spacing: 0.03em;
 color: #2196f3;
   font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin-bottom:20px ;
 }
+.company-link{
+border: 1px solid #afb1b8;
+border-radius: 4px;
+width: 170px;
+height: 92px;
+display: flex;
+justify-content: center;
+align-items: center;
 
+}
 .footer-adress {
   font-weight: 400;
   font-size: 14px;
@@ -436,10 +458,13 @@ color: rgba(255, 255, 255, 0.6);
   width: 20px;
   height: 20px;
   fill: #fff;
-  border-radius: 50%;
+
 }
-.footer-icon:hover{
+.company-link:hover{
+  border: 1px solid  var(--accient-color);
+.company-icon{ 
   fill: var(--accient-color);
+}
 }
 .footer-sub-text{
   font-weight: 700;
@@ -447,14 +472,21 @@ font-size: 14px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #fff;
+margin-bottom:20px ;
 }
 
-.footer-icons{
-  margin-left:70px ;
-display: flex;
-
+.footer-link{
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.e-mail-footer{
-
+.list-links{
+  display: flex;
+gap: 10px;
 }
