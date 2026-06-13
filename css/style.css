@@ -353,6 +353,34 @@ color: var();
   padding-bottom: 30px;
 }
 
+.company-box{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.title-company{
+margin-bottom:50px ;
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+}
+.company-icon{
+  width: 106;
+  height: 60px;
+  fill: gray;
+}
+.company-icon:hover{
+  fill: #2196f3 ;
+  font-weight: 700;
+font-size: 6px;
+}
+.container{
+  padding-bottom: 94px;
+}
+
 /* footer */
 
 .footer {
@@ -402,4 +430,31 @@ color: rgba(255, 255, 255, 0.6);
 }
 .footer-web{
   color:white ;
+}
+
+.footer-icon{
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  border-radius: 50%;
+}
+.footer-icon:hover{
+  fill: var(--accient-color);
+}
+.footer-sub-text{
+  font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
+
+.footer-icons{
+  margin-left:70px ;
+display: flex;
+
+}
+
+.e-mail-footer{
+
 }
