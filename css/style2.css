@@ -267,11 +267,14 @@ color: rgba(255, 255, 255, 0.6);
   margin-left: 70px;
   margin-right: auto;
 }
+.footer-text{
+  
+}
+
 .footer-icon{
   width: 20px;
   height: 20px;
   fill: #fff;
-
 }
 .company-link:hover{
   border: 1px solid  var(--accient-color);
