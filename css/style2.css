@@ -205,7 +205,6 @@ flex-basis: calc((100% - 60px)/ 3);
 
 .footer .container{
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 .footer-text{
@@ -263,6 +262,11 @@ color: rgba(255, 255, 255, 0.6);
   color:white ;
 }
 
+
+.footer-icons{
+  margin-left: 70px;
+  margin-right: auto;
+}
 .footer-icon{
   width: 20px;
   height: 20px;
@@ -324,6 +328,7 @@ width: 358px;
 height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: rgba(33, 150, 243, 0);
+padding-left: 16px;
 }
 
 .form-text{

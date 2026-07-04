@@ -418,7 +418,6 @@ font-size: 6px;
 
 .footer .container{
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 .footer-text{
@@ -482,6 +481,11 @@ color: rgba(255, 255, 255, 0.6);
   fill: #fff;
 
 }
+
+.footer-icons{
+  margin-left:70px ;
+  margin-right: auto;
+}
 .company-link:hover{
   border: 1px solid  var(--accient-color);
 .company-icon{ 
@@ -539,8 +543,8 @@ padding: 40px;
 }
 
 .model-icon{
-    width: 11px;
-    height: 11px;
+    width: 20px;
+    height: 20px;
     fill: #000;
 }
 
@@ -556,6 +560,10 @@ padding: 40px;
     position: absolute;
     top: 8px;
     right: 8px;
+}
+
+.model-close:hover{
+.model-icon{fill: var(--accient-color);}
 }
 
 .model-title{
@@ -577,16 +585,23 @@ margin-bottom: 10px;
 }
 
 .model-input{
-    border: 1px solid rgba(33, 33, 33, 0.2);
+outline: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 width: 448px;
 height: 40px;
 display: block;
 margin-top:4px ;
 padding-left:42px ;
-
+border: none;
 }
 
+.model-input:hover,.model-input:focus{
+outline: 1px solid var(--accient-color);
+}
+
+.model-input:hover + .model-pic,.model-input:focus+.model-pic{
+    fill: var(--accient-color);
+}
 .model-pic{
     width: 18px;
     height: 18px;
@@ -678,6 +693,7 @@ width: 358px;
 height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: rgba(33, 150, 243, 0);
+padding-left: 16px;
 }
 
 .form-text{
@@ -688,6 +704,7 @@ text-transform: uppercase;
 color: #fff;
 width: 207px;
 }
+
 
 .footer-button{
   border-radius: 4px;
@@ -717,4 +734,10 @@ justify-content: center;
 display: flex;
 flex-direction: column;
 gap: 20px;
+}
+
+
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
 }
