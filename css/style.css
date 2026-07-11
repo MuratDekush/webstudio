@@ -49,6 +49,9 @@ align-items: center;
   width: 10px;
 height: 16px; 
   fill:var(--desk-color);
+  transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 
@@ -56,7 +59,9 @@ height: 16px;
   width: 16px;
   height:12px;
   fill: var(--desk-color);
-
+  transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -66,6 +71,7 @@ height: 16px;
 
 .header-page1{
   margin-right: 50px;
+  
 }
 .header-page2{
   margin-right: 50px;
@@ -90,6 +96,9 @@ a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+  transition-duration:250ms ;
+transition-property: color;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover {
@@ -106,6 +115,9 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+    transition-duration:2500ms ;
+transition-property: color ;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .header-mail{
@@ -290,6 +302,9 @@ align-items: center;
   width: 20px;
   height: 20px;
 fill:#AFB1B8;
+  transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link{
   width: 44px;
@@ -298,6 +313,9 @@ fill:#AFB1B8;
   align-items: center;
 justify-content: center;
 border-radius: 50%;
+  transition-duration:250ms ;
+transition-property: background-color;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover{
   background-color: var(--accient-color);
@@ -321,6 +339,9 @@ overflow: hidden;
 .team-img{
 background: #fff;
 width: 100%;
+  transition-duration:2500ms ;
+transition-property:background;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-name{
   margin-bottom: 10px;
@@ -391,6 +412,9 @@ color: #212121;
   width: 106px;
   height: 60px;
 fill:#AFB1B8;
+  transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-icon:hover{
   fill: #2196f3 ;
@@ -407,6 +431,26 @@ font-size: 6px;
   gap: 30px;
 }
 
+.company-link{
+border: 1px solid #afb1b8;
+border-radius: 4px;
+width: 170px;
+height: 92px;
+display: flex;
+justify-content: center;
+align-items: center;
+  transition-duration:250ms ;
+transition-property: border;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.company-link:hover{
+  border: 1px solid  var(--accient-color);
+.company-icon{ 
+  fill: var(--accient-color);
+}
+}
 /* footer */
 
 .footer {
@@ -433,16 +477,7 @@ color: #2196f3;
   display: inline-block;
   margin-bottom:20px ;
 }
-.company-link{
-border: 1px solid #afb1b8;
-border-radius: 4px;
-width: 170px;
-height: 92px;
-display: flex;
-justify-content: center;
-align-items: center;
 
-}
 .footer-adress {
   font-weight: 400;
   font-size: 14px;
@@ -479,19 +514,13 @@ color: rgba(255, 255, 255, 0.6);
   width: 20px;
   height: 20px;
   fill: #fff;
-
 }
 
 .footer-icons{
   margin-left:70px ;
   margin-right: auto;
 }
-.company-link:hover{
-  border: 1px solid  var(--accient-color);
-.company-icon{ 
-  fill: var(--accient-color);
-}
-}
+
 .footer-sub-text{
   font-weight: 700;
 font-size: 14px;
@@ -509,7 +538,9 @@ margin-bottom:20px ;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+    transition-duration:250ms ;
+transition-property: background-color;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-links{
@@ -546,6 +577,9 @@ padding: 40px;
     width: 20px;
     height: 20px;
     fill: #000;
+        transition-duration:250ms ;
+transition-property:fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-close{
@@ -560,6 +594,7 @@ padding: 40px;
     position: absolute;
     top: 8px;
     right: 8px;
+
 }
 
 .model-close:hover{
@@ -593,6 +628,9 @@ display: block;
 margin-top:4px ;
 padding-left:42px ;
 border: none;
+    transition-duration:2500ms ;
+transition-property: outline;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-input:hover,.model-input:focus{
@@ -609,6 +647,9 @@ outline: 1px solid var(--accient-color);
     position:absolute;
     top: 27px;
     left: 15px ;
+        transition-duration:2500ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-comment{

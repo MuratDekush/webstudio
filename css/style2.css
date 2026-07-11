@@ -54,6 +54,9 @@ align-items: center;
   width: 10px;
 height: 16px; 
   fill:var(--desk-color);
+    transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 
@@ -61,7 +64,9 @@ height: 16px;
   width: 16px;
   height:12px;
   fill: var(--desk-color);
-
+  transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -95,6 +100,9 @@ a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+    transition-duration:250ms ;
+transition-property: color;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover {
@@ -111,6 +119,9 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+      transition-duration:250ms ;
+transition-property: color ;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .header-mail{
@@ -139,6 +150,9 @@ background: #2196f3;
   padding: 6px 22px;
   border-radius: 4px;
   background-color: var(--bg-button);
+      transition-duration:250ms ;
+transition-property: background-color, color, box-shadow ;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
  .filtration-list{
     display: flex;
@@ -182,7 +196,9 @@ background: #2196f3;
 .proect-item{
     outline: 1px solid var(--cart-border);
 flex-basis: calc((100% - 60px)/ 3);
-
+    transition-duration:250ms ;
+transition-property:box-shadow ;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .proect-item:hover{
       box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -299,7 +315,9 @@ margin-bottom:20px ;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+      transition-duration:2500ms ;
+transition-property: background-color;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-links{
