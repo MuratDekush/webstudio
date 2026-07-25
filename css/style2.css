@@ -211,6 +211,7 @@ font-size: 18px;
 line-height: 156%;
 letter-spacing: 0.03em;
 color: #fff;
+overflow: hidden;
 }
 
 .text-project{
@@ -219,7 +220,7 @@ color: #fff;
   left: 0;
 background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  transform: translateY(150%);
+  transform: translateY(100%);
               transition-duration:250ms ;
 transition-property:transform;
 transition-timing-function:linear ;
@@ -230,7 +231,6 @@ transition-timing-function:linear ;
 }
 .proect-item{
     outline: 1px solid var(--cart-border);
-overflow: hidden;
 }
 .proect-item:hover{
     .text-project{
