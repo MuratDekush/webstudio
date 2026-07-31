@@ -578,6 +578,9 @@ background-color:var(--accient-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
 }
 
 .model{
@@ -588,6 +591,10 @@ box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1
 background: #fff;
 position: relative;
 padding: 40px;
+transform: scale(1);
+transition-property: transform;
+transition-duration: 250ms;
+transition-timing-function: ease;
 }
 
 .model-icon{
@@ -798,4 +805,8 @@ gap: 20px;
 .is-hidden{
   opacity: 0;
   pointer-events: none;
+}
+
+.is-hidden .model{
+  transform: scale(0.8);
 }
