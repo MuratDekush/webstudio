@@ -47,7 +47,25 @@ align-items: center;
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
      margin-right:93px ;
+     animation-name: logo-move;
+ animation-duration: 2000ms;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
  
+}
+
+
+@keyframes logo-move{
+  0%{
+transform-origin:center;
+transform: rotate(-10deg) scale(0.9) skew(-10deg,-10deg);
+
+  }
+
+  100%{
+transform-origin:left bottom ;
+transform: rotate(10deg) scale(1.1) skew(10deg,10deg);
+  }
 }
 
 .header-icon-phone{
@@ -93,6 +111,26 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--accient-color);
   border-radius: 2px;
   color: var(--accient-color);
+  transform: scale(0);
+  animation-name: move-after;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes move-after{
+  0%{
+transform: scale(0);
+background-color: var(--accient-color);
+  }
+
+
+  100%{
+transform: scale(1);
+background-color: red;
+
+  }
 }
 .header-page1{
   margin-right: 50px;
