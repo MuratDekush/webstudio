@@ -1,0 +1,109 @@
+
+/* team */
+.team{
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: var(--team-bg);
+  
+}
+.team-icon{
+  width: 20px;
+  height: 20px;
+fill:#AFB1B8;
+  transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+justify-content: center;
+border-radius: 50%;
+  transition-duration:250ms ;
+transition-property: background-color;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-link:hover{
+  background-color: var(--accient-color);
+.team-icon{
+  fill: var(--additionaltext-color);
+}
+}
+.team-icons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.team-item {
+  flex-basis: calc((100% - 90px)/ 4);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 4px 4px;
+overflow: hidden;
+}
+.team-img{
+background: #fff;
+width: 100%;
+  transition-duration:2500ms ;
+transition-property:background;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-name{
+  margin-bottom: 10px;
+  font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color:var(--text-color);
+}
+.team-work{
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var();
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 50px;
+  
+}
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+}
+.team-work {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--desk-color);
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-wrap {
+  background-color: var(--additionaltext-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
