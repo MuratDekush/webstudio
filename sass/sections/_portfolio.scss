@@ -1,4 +1,38 @@
-/* proect */
+
+.filtration{
+  padding: 94px 0 50px 0;
+}
+
+.filtration-button:hover {
+  color: var(--additionaltext-color);
+  background-color: var(--accient-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+background: #2196f3;
+}
+.filtration-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: var(--bg-button);
+      transition-duration:250ms ;
+transition-property: background-color, color, box-shadow ;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+ .filtration-list{
+    display: flex;
+    justify-content: center;
+
+ }
+ .filtration-item{
+    margin-right: 8px;
+ }
+
+ /* proect */
 .proect-text {
   font-weight: 400;
   font-size: 16px;
