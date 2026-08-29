@@ -1,3 +1,5 @@
+@use"../base/variable" as *;
+
 
 /* info */
 .info {
@@ -9,7 +11,7 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-color);
+  color:$text-color;
   margin-bottom: 10px;
 }
 
@@ -19,7 +21,7 @@ display: block;
 border-radius: 4px;
 width: 270px;
 height: 120px;
-background-color:  #f5f4fa;
+background-color:  $team-bg;
 margin-bottom: 30px;
 background-image: url(../img/antenna.png);
 background-repeat: no-repeat;
@@ -52,7 +54,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
-color: #757575;
+color: $desk-color;
 }
 
 .info-item {

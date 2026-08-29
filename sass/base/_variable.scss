@@ -1,9 +1,22 @@
-:root {
-  --text-color: #212121;
-  --footer-background: #2f303a;
-  --accient-color: #2196f3;
-  --additionaltext-color: #ffffff;
-  --team-bg:#F5F4FA;
-  --desk-color:#757575;
-  
-}
+
+  $text-color: #212121;
+  $footer-background: #2f303a;
+  $accient-color: #2196f3;
+  $additionaltext-color: #ffffff;
+  $team-bg:#F5F4FA;
+  $desk-color:#757575;
+  $icon-fill:#AFB1B8;
+  $footer-contact:rgba(255, 255, 255, 0.6);
+  $footer-link:rgba(255, 255, 255, 0.1);
+  $backdrop-color: rgba(0, 0, 0, 0.416);
+  $footer-input:rgba(255, 255, 255, 0.3);
+  $footer-shadow: rgba(0, 0, 0, 0.15);
+  $footer-input-bcg:rgba(33, 150, 243, 0);
+  $model-icon:#000;
+  $model-outline:rgba(0, 0, 0, 0.1);
+  $model-input-outline:rgba(33, 33, 33, 0.2);
+  $model-comment:rgba(117, 117, 117, 0.5);
+  $project-bcg: rgba(33, 150, 243, 0.9);
+  $project-outline:#eee;
+  $work-overlay:rgba(47, 48, 58, 0.8);
+  $bg-button:#f5f4fa;

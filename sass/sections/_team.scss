@@ -1,15 +1,17 @@
+@use"../base/variable" as *;
+
 
 /* team */
 .team{
   padding-bottom: 94px;
   padding-top: 94px;
-  background-color: var(--team-bg);
+  background-color: $team-bg;
   
 }
 .team-icon{
   width: 20px;
   height: 20px;
-fill:#AFB1B8;
+fill:$icon-fill;
   transition-duration:250ms ;
 transition-property: fill;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,9 +28,9 @@ transition-property: background-color;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover{
-  background-color: var(--accient-color);
+  background-color: $accient-color;
 .team-icon{
-  fill: var(--additionaltext-color);
+  fill: $additionaltext-color;
 }
 }
 .team-icons{
@@ -45,7 +47,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
 }
 .team-img{
-background: #fff;
+background:$additionaltext-color;
 width: 100%;
   transition-duration:2500ms ;
 transition-property:background;
@@ -57,21 +59,21 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 font-size: 16px;
 letter-spacing: 0.03em;
 text-align: center;
-color:var(--text-color);
+color:$text-color;
 }
 .team-work{
 font-weight: 400;
 font-size: 16px;
 letter-spacing: 0.03em;
 text-align: center;
-color: var();
+color:$desk-color;
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color:$text-color;
   margin-bottom: 50px;
   
 }
@@ -80,7 +82,7 @@ color: var();
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color:$text-color;
 }
 
 .team-name {
@@ -88,14 +90,14 @@ color: var();
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color:$text-color;
 }
 .team-work {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--desk-color);
+  color: $desk-color;
 }
 .team-list {
   display: flex;
@@ -103,7 +105,7 @@ color: var();
 }
 
 .team-wrap {
-  background-color: var(--additionaltext-color);
+  background-color: $additionaltext-color;
   padding-top: 30px;
   padding-bottom: 30px;
 }
