@@ -5,17 +5,15 @@
 .info {
   padding: 94px 0 94px 0;
 
-}
-.info-subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color:$text-color;
-  margin-bottom: 10px;
+&__list {
+  display: flex;
+  gap: 30px; 
 }
 
-.info-item::before{
+&__item {
+flex-basis: calc((100% - 90px)/ 4);
+
+&:before{
   content: "";
 display: block;
 border-radius: 4px;
@@ -29,34 +27,44 @@ background-position: center;
 
 }
 
-.info-item:nth-child(2)::before{
+
+&:nth-child(2)::before{
   background-image: url(../img/clock.png);
 }
 
-.info-item:nth-child(3)::before{
+&:nth-child(3)::before{
   background-image: url(../img/diagram.png);
 }
 
-.info-item:nth-child(4)::before{
+&:nth-child(4)::before{
   background-image: url(../img/astronaut.png);
 }
 
-
-.info-list {
-  display: flex;
-  gap: 30px; 
-
 }
 
+&__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:$text-color;
+  margin-bottom: 10px;
+}
 
-.info-text {
+&__text {
 font-weight: 400;
 font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: $desk-color;
 }
-
-.info-item {
-flex-basis: calc((100% - 90px)/ 4);
 }
+
+
+
+
+
+
+
+
+
