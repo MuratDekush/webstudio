@@ -7,19 +7,50 @@
   padding-top: 94px;
   background-color: $team-bg;
   
-
-
-  
+&__title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color:$text-color;
+  margin-bottom: 50px;
 }
-.team-icon{
-  width: 20px;
-  height: 20px;
-fill:$icon-fill;
-  transition-duration:250ms ;
-transition-property: fill;
+
+&__list {
+  display: flex;
+  gap: 30px;
+}
+
+&__item {
+  flex-basis: calc((100% - 90px)/ 4);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 4px 4px;
+overflow: hidden;
+}
+&__img{
+background:$additionaltext-color;
+width: 100%;
+  transition-duration:2500ms ;
+transition-property:background;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-link{
+
+
+&__wrap {
+  background-color: $additionaltext-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+&__icons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+&__link{
   width: 44px;
   height: 44px;
   display: flex;
@@ -30,33 +61,19 @@ border-radius: 50%;
 transition-property: background-color;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-link:hover{
-  background-color: $accient-color;
-.team-icon{
-  fill: $additionaltext-color;
-}
-}
-.team-icons{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 16px;
-}
-.team-item {
-  flex-basis: calc((100% - 90px)/ 4);
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 0 0 4px 4px;
-overflow: hidden;
-}
-.team-img{
-background:$additionaltext-color;
-width: 100%;
-  transition-duration:2500ms ;
-transition-property:background;
+
+&__icon{
+  width: 20px;
+  height: 20px;
+fill:$icon-fill;
+  transition-duration:250ms ;
+transition-property: fill;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-name{
+
+
+
+&__name {
   margin-bottom: 10px;
   font-weight: 500;
 font-size: 16px;
@@ -64,51 +81,34 @@ letter-spacing: 0.03em;
 text-align: center;
 color:$text-color;
 }
-.team-work{
-font-weight: 400;
-font-size: 16px;
-letter-spacing: 0.03em;
-text-align: center;
-color:$desk-color;
-}
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color:$text-color;
-  margin-bottom: 50px;
-  
-}
-.team-header {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color:$text-color;
-}
 
-.team-name {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color:$text-color;
-}
-.team-work {
+
+
+
+
+
+&__work {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
   color: $desk-color;
 }
-.team-list {
-  display: flex;
-  gap: 30px;
+
+
+&__header {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color:$text-color;
 }
 
-.team-wrap {
-  background-color: $additionaltext-color;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.team-link:hover{
+  background-color: $accient-color;
+.team-icon{
+  fill: $additionaltext-color;
+}
+
+}
 }

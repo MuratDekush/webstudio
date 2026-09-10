@@ -1,7 +1,11 @@
 @use"../base/variable" as*;
 
 
-.title-company{
+.company{
+  padding-top: 94px;
+  padding-bottom:94px ;
+
+&__title{
 margin-bottom:50px ;
 font-weight: 700;
 font-size: 36px;
@@ -9,30 +13,14 @@ letter-spacing: 0.03em;
 text-align: center;
 color: $text-color;
 }
-.company-icon{
-  width: 106px;
-  height: 60px;
-fill:$icon-fill;
-  transition-duration:250ms ;
-transition-property: fill;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-.company-icon:hover{
-  fill: $accient-color;
-  font-weight: 700;
-font-size: 6px;
-}
-.company{
-  padding-top: 94px;
-  padding-bottom:94px ;
-}
-.list-icons{
+
+&__icons{
   display: flex;
   align-items: center;
-  gap: 30px;
+ gap: 30px;
 }
 
-.company-link{
+&__link{
 border: 1px solid $icon-fill;
 border-radius: 4px;
 width: 170px;
@@ -46,9 +34,35 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.company-link:hover{
+
+&__icons{
+  width: 106px;
+  height: 60px;
+fill:$icon-fill;
+  transition-duration:250ms ;
+transition-property: fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover{
+  fill: $accient-color;
+  font-weight: 700;
+font-size: 6px;
+}
+}
+
+
+&:hover{
   border: 1px solid  $accient-color;
 .company-icon{ 
   fill: $accient-color;
 }
 }
+}
+
+
+
+
+
+
+
+

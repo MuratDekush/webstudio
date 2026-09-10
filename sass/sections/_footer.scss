@@ -1,23 +1,22 @@
 @use"../base/variable" as*;
 
 
-
+.footer .container{
+  display: flex;
+  align-items: baseline;
+}
 .footer {
   background-color: $footer-background;
   padding-bottom: 60px;
     padding-top: 60px;
 
+
+
+&__title{
+  margin-bottom: 20px;
 }
 
-.footer .container{
-  display: flex;
-  align-items: baseline;
-}
-.footer-text{
-  margin-bottom:9px ;
-}
-
-.footer-webstudio {
+&__webstudio {
 font-weight: 700;
 font-size: 26px;
 letter-spacing: 0.03em;
@@ -27,14 +26,35 @@ color: $accient-color;
   margin-bottom:20px ;
 }
 
-.footer-adress {
+
+&__web{
+  color:$additionaltext-color ;
+}
+
+
+&__adress {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: $additionaltext-color;
 }
-.footer-contact {
+
+
+&__text{
+  margin-bottom:9px ;
+}
+
+
+&__mail{
+  font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: $footer-contact;
+}
+
+&__contact {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
@@ -42,35 +62,14 @@ color: $accient-color;
   color: $footer-contact;
 }
 
-.footer-title{
-  margin-bottom: 20px;
-}
-.footer-adress{
-  margin-bottom: 9px;
-}
-.footer-mail{
-  font-weight: 400;
-font-size: 14px;
-line-height: 171%;
-letter-spacing: 0.03em;
-color: $footer-contact;
-}
-.footer-web{
-  color:$additionaltext-color ;
-}
 
-.footer-icon{
-  width: 20px;
-  height: 20px;
-  fill: $additionaltext-color;
-}
-
-.footer-icons{
+&__icons{
   margin-left:70px ;
   margin-right: auto;
 }
 
-.footer-sub-text{
+
+&__subtext{
   font-weight: 700;
 font-size: 14px;
 letter-spacing: 0.03em;
@@ -79,7 +78,14 @@ color: $additionaltext-color;
 margin-bottom:20px ;
 }
 
-.footer-link{
+
+&__links{
+  display: flex;
+gap: 10px;
+}
+
+
+&__link{
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -90,25 +96,51 @@ margin-bottom:20px ;
     transition-duration:250ms ;
 transition-property: background-color;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.list-links{
-  display: flex;
-gap: 10px;
-}
-.footer-link:hover{
+
+
+&:hover{
 background-color: $accient-color;
 }
+}
 
 
-.footer-form{
+
+&__icon{
+  width: 20px;
+  height: 20px;
+  fill: $additionaltext-color;
+}
+
+
+&__div{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+
+&__formtext{
+  font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $additionaltext-color;
+width: 207px;
+}
+
+
+
+&__form{
   display: flex;
   align-items: center;
 gap: 12px;
   
 }
 
-.footer-input{
+
+
+&__input{
 font-weight: 400;
 font-size: 16px;
 line-height: 125%;
@@ -123,17 +155,9 @@ background: $footer-input-bcg;
 padding-left: 16px;
 }
 
-.form-text{
-  font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: $additionaltext-color;
-width: 207px;
-}
 
 
-.footer-button{
+&__button{
   border-radius: 4px;
 width: 200px;
 height: 50px;
@@ -150,16 +174,17 @@ align-items: center;
 justify-content: center;
 }
 
-.footer-svg{
+&__svg{
   fill: $additionaltext-color;
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
+.footer-adress{
+  margin-bottom: 9px;
+}
 
-.footer-div{
-display: flex;
-flex-direction: column;
-gap: 20px;
+
+
 }
 
