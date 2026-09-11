@@ -13,18 +13,9 @@ transform: scale(1);
 transition-property: transform;
 transition-duration: 250ms;
 transition-timing-function: ease;
-}
 
-.model-icon{
-    width: 20px;
-    height: 20px;
-    fill: $model-icon;
-        transition-duration:250ms ;
-transition-property:fill;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.model-close{
+&__close{
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -36,14 +27,14 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     top: 8px;
     right: 8px;
-
-}
-
-.model-close:hover{
+&:hover{
 .model-icon{fill:$accient-color;}
 }
 
-.model-title{
+}
+
+
+&__title{
     font-weight: 700;
 font-size: 20px;
 text-align: center;
@@ -51,7 +42,7 @@ color: $text-color;
 margin-bottom: 12px;
 }
 
-.model-label{
+&__label{
     font-weight: 400;
 font-size: 12px;
 letter-spacing: 0.01em;
@@ -61,7 +52,8 @@ position: relative;
 margin-bottom: 10px;
 }
 
-.model-input{
+
+&__input{
 outline: 1px solid $model-input-outline;
 border-radius: 4px;
 width: 448px;
@@ -73,16 +65,18 @@ border: none;
     transition-duration:2500ms ;
 transition-property: outline;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.model-input:hover,.model-input:focus{
+&:hover,.model-input:focus{
 outline: 1px solid $accient-color;
 }
 
-.model-input:hover + .model-pic,.model-input:focus+.model-pic{
+&:hover + .model-pic,.model-input:focus+.model-pic{
     fill:$accient-color;
 }
-.model-pic{
+
+}
+
+&__pic{
     width: 18px;
     height: 18px;
     fill: $text-color;
@@ -94,7 +88,7 @@ transition-property: fill;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.model-comment{
+&__comment{
     border: 1px solid $model-input-outline;
 border-radius: 4px;
 width: 448px;
@@ -109,7 +103,7 @@ letter-spacing: 0.01em;
 color: $model-comment;
 }
 
-.model-wrap{
+&__wrap{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,12 +111,11 @@ color: $model-comment;
     margin-bottom: 30px;
 }
 
-.model-check{
+&__check{
     width: 16px;
     height: 16px;
 }
-
-.model-span{
+&__span{
     font-weight: 400;
 font-size: 14px;
 line-height: 171%;
@@ -131,7 +124,7 @@ color:$desk-color;
 margin-left: 7px;
 margin-right: 7px;
 }
-.model-link{
+&__link{
     font-weight: 400;
 font-size: 14px;
 line-height: 171%;
@@ -141,7 +134,16 @@ text-decoration-skip-ink: none;
 color: $accient-color;
 }
 
-.model-submit{
+
+&__icon{
+    width: 20px;
+    height: 20px;
+    fill: $model-icon;
+        transition-duration:250ms ;
+transition-property:fill;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__submit{
     font-weight: 700;
 font-size: 16px;
 line-height: 188%;
@@ -156,6 +158,12 @@ height: 50px;
 display: block;
 margin: 0 auto;
 }
+}
+
+
+
+
+
 
 
 .backdrop{
