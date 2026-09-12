@@ -1,10 +1,10 @@
 @use"../base/variable" as *;
 
-
+@use"../utils/mixin.scss" as*;
+@use"../utils/placeholders"as*;
 /* team */
 .team{
-  padding-bottom: 94px;
-  padding-top: 94px;
+@extend %section-padding;
   background-color: $team-bg;
   
 &__title {
@@ -30,9 +30,8 @@ overflow: hidden;
 &__img{
 background:$additionaltext-color;
 width: 100%;
-  transition-duration:2500ms ;
-transition-property:background;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+@include animation (background);
+
 }
 
 
@@ -57,18 +56,16 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
 justify-content: center;
 border-radius: 50%;
-  transition-duration:250ms ;
-transition-property: background-color;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+@include animation (background-color);
+
 }
 
 &__icon{
   width: 20px;
   height: 20px;
 fill:$icon-fill;
-  transition-duration:250ms ;
-transition-property: fill;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+@include animation (fill);
+
 }
 
 

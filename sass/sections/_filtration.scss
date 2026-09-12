@@ -1,5 +1,5 @@
 
-
+@use"../utils/mixin.scss" as*;
 @use"../base/variable" as *;
 
 .filtration{
@@ -25,9 +25,8 @@
   padding: 6px 22px;
   border-radius: 4px;
   background-color:$bg-button;
-      transition-duration:250ms ;
-transition-property: background-color, color, box-shadow ;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+  @include animation (( background-color, color, box-shadow));
+
 
 
 &:hover {

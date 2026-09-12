@@ -1,5 +1,6 @@
 @use"../base/variable" as*;
 
+@use"../utils/mixin.scss"as*;
 
 .footer .container{
   display: flex;
@@ -93,9 +94,8 @@ gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-    transition-duration:250ms ;
-transition-property: background-color;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation (background-color);
+
 
 
 

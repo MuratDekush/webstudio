@@ -1,5 +1,7 @@
 @use"../base/variable" as *;
 
+@use"../utils/mixin.scss" as*;
+
 /* hero */
 .hero {
 padding-top:200px ;

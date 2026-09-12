@@ -1,5 +1,6 @@
 @use"../base/variable" as *;
 
+@use"../utils/mixin.scss" as*;
 
 .model{
     border-radius: 4px;
@@ -10,9 +11,8 @@ background: $additionaltext-color;
 position: relative;
 padding: 40px;
 transform: scale(1);
-transition-property: transform;
-transition-duration: 250ms;
-transition-timing-function: ease;
+@include animation (transform);
+
 
 
 &__close{
@@ -62,15 +62,14 @@ display: block;
 margin-top:4px ;
 padding-left:42px ;
 border: none;
-    transition-duration:2500ms ;
-transition-property: outline;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+@include animation (outline);
 
-&:hover,.model-input:focus{
+
+&:hover,.model__input:focus{
 outline: 1px solid $accient-color;
 }
 
-&:hover + .model-pic,.model-input:focus+.model-pic{
+&:hover + .model__pic,.model__input:focus+.model__pic{
     fill:$accient-color;
 }
 
@@ -83,9 +82,8 @@ outline: 1px solid $accient-color;
     position:absolute;
     top: 27px;
     left: 15px ;
-        transition-duration:2500ms ;
-transition-property: fill;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation (fill);
+
 }
 
 &__comment{
@@ -139,9 +137,10 @@ color: $accient-color;
     width: 20px;
     height: 20px;
     fill: $model-icon;
-        transition-duration:250ms ;
-transition-property:fill;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation (fill);
+//         transition-duration:250ms ;
+// transition-property:fill;
+// transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 &__submit{
     font-weight: 700;
@@ -176,9 +175,10 @@ margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: ease;
+    @include animation (opacity);
+    // transition-property: opacity;
+    // transition-duration: 250ms;
+    // transition-timing-function: ease;
 }
 
 .is-hidden{

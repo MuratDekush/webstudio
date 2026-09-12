@@ -1,9 +1,10 @@
 @use"../base/variable" as *;
 
-
+@use"../utils/mixin.scss" as*;
+@use"../utils/placeholders"as*;
 /* info */
 .info {
-  padding: 94px 0 94px 0;
+@extend %section-padding;
 
 &__list {
   display: flex;

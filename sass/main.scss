@@ -1,5 +1,9 @@
 @use"./base/reset";
 
+@use"./utils/mixin.scss";
+
+@use"./utils/placeholders";
+
 @use"./base/variable";
 
 @use"./base/comen";
@@ -24,4 +28,5 @@
 
 @use"./sections/filtration";
 
-@use"./sections/proect"
+@use"./sections/proect";
+

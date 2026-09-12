@@ -1,9 +1,10 @@
 @use"../base/variable" as*;
-
-
+@use"../utils/mixin.scss" as*;
+@use"../utils/placeholders"as*;
 .company{
-  padding-top: 94px;
-  padding-bottom:94px ;
+  @extend %section-padding;
+  // padding-top: 94px;
+  // padding-bottom:94px ;
 
 &__title{
 margin-bottom:50px ;
@@ -28,20 +29,24 @@ height: 92px;
 display: flex;
 justify-content: center;
 align-items: center;
-  transition-duration:250ms ;
-transition-property: border;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
+@include animation(border);
+&:hover{
+  border: 1px solid  $accient-color;
+.company__icon{ 
+  fill: $accient-color;
+}
+}
 }
 
 
-&__icons{
+&__icon{
   width: 106px;
   height: 60px;
 fill:$icon-fill;
-  transition-duration:250ms ;
-transition-property: fill;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+@include animation (fill);
+//   transition-duration:250ms ;
+// transition-property: fill;
+// transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 &:hover{
   fill: $accient-color;
@@ -51,12 +56,7 @@ font-size: 6px;
 }
 
 
-&:hover{
-  border: 1px solid  $accient-color;
-.company-icon{ 
-  fill: $accient-color;
-}
-}
+
 }
 
 
