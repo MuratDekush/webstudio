@@ -82,7 +82,7 @@ body {
 .header__page:hover {
   color: #2196f3;
 }
-.header__page:after {
+.header__page1:after {
   content: "";
   position: absolute;
   left: 0;
