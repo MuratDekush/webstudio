@@ -4,40 +4,65 @@
 
 /* hero */
 .hero {
-padding-top:200px ;
-padding-bottom: 200px;
+padding-top:118px ;
+padding-bottom: 118px;
 background-image: linear-gradient(rgb(47,48,58,0.4),rgb(47,48,58,0.4)),url(../img/bck-hero.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+@media (min-width:768px){
+padding-top:118px ;
+padding-bottom: 118px;
+  
+}
+@media (min-width:1200px){
+padding-top:200px ;
+padding-bottom: 200px;
+  
+}
+
 
 &__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
+font-weight: 900;
+font-size: 26px;
+line-height: 162%;
+letter-spacing: 0.06em;
+text-align: center;
+text-transform: uppercase;
   color: $additionaltext-color;
   margin-bottom:30px ;
-  width: 696px;
-  height: 120px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 color: transparent;
 background-image: url(https://i.pinimg.com/originals/f9/6d/fb/f96dfb9f9d4e0b42af3888de8b9473a7.gif);
 background-clip: text;
 background-position: bottom;
+
+@media (min-width:480px){
+width: 360px;
+  
+}
+
+@media (min-width:1200px){
+font-size: 44px;
+line-height: 136%;
+width: 696px;
+  
+}
+
+
+
 }
 &__get-it {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  text-align: center;
+font-weight: 700;
+font-size: 16px;
+line-height: 188%;
+letter-spacing: 0.06em;
+text-align: center;
   color: $additionaltext-color;
   background:$accient-color;
-  padding: 12px 24px;
+  padding: 10px 24px;
   cursor: pointer;
   border-radius: 4px;
     margin-left: auto;
@@ -45,7 +70,12 @@ background-position: bottom;
   display: block;
   box-shadow: 0 4px 4px 0 $footer-shadow;
   background: #2196f3;
+  
+
+
+
 }
+
 
 
 }
