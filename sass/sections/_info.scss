@@ -24,7 +24,7 @@ flex-basis: calc((100% - 90px)/ 4);
   @media (min-width:768px){
  width: calc((100% - 20px) / 2);
 }
-  width: calc((100% - 20px) / 2);
+
 &:before{
   content: "";
 display: block;

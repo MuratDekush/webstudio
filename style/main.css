@@ -313,9 +313,6 @@ body {
     width: calc((100% - 20px) / 2);
   }
 }
-.info__item {
-  width: calc((100% - 20px) / 2);
-}
 .info__item:before {
   content: "";
   display: block;
@@ -403,11 +400,16 @@ body {
 }
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+  }
 }
 .team__list {
   display: flex;
@@ -433,9 +435,7 @@ body {
 }
 .team__icons {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
+  flex-direction: column;
   margin-top: 16px;
 }
 .team__link {
