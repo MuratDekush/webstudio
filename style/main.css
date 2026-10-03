@@ -435,7 +435,7 @@ body {
 }
 .team__icons {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
   margin-top: 16px;
 }
 .team__link {
