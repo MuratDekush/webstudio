@@ -3,22 +3,28 @@
 @use"../utils/placeholders"as*;
 .company{
   @extend %section-padding;
-  // padding-top: 94px;
-  // padding-bottom:94px ;
 
 &__title{
 margin-bottom:50px ;
 font-weight: 700;
-font-size: 36px;
+font-size: 28px;
 letter-spacing: 0.03em;
 text-align: center;
 color: $text-color;
+@media (min-width:1200px){
+font-size: 36px;
+}
 }
 
+
+.company__iconn{
+  flex-basis: calc((100% - 30px) / 2);
+
+}
 &__icons{
   display: flex;
-  align-items: center;
- gap: 30px;
+  flex-wrap: wrap;
+ gap:30px;
 }
 
 &__link{
@@ -44,9 +50,7 @@ align-items: center;
   height: 60px;
 fill:$icon-fill;
 @include animation (fill);
-//   transition-duration:250ms ;
-// transition-property: fill;
-// transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 
 &:hover{
   fill: $accient-color;
