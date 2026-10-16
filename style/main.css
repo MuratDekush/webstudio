@@ -948,9 +948,9 @@ body {
 .filtration__list {
   display: flex;
   justify-content: center;
-}
-.filtration__item {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .filtration__button {
   font-weight: 500;

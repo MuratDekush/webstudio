@@ -8,11 +8,15 @@
 &__list{
     display: flex;
     justify-content: center;
+flex-wrap: wrap;
+    gap: 8px;
+    flex-basis: calc((100% - 60px)/ 3 );
+
 
  }
 
 &__item{
-    margin-right: 8px;
+
  }
 
 &__button {
