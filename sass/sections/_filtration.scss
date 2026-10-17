@@ -3,21 +3,29 @@
 @use"../base/variable" as *;
 
 .filtration{
-  padding: 94px 0 50px 0;
+  padding: 60px 0 40px 0;
+@media (min-width:1200px){
+padding: 94px 0 50px 0;
+}
 
 &__list{
     display: flex;
-    justify-content: center;
 flex-wrap: wrap;
-    gap: 8px;
-    flex-basis: calc((100% - 60px)/ 3 );
+gap: 8px ;
+row-gap: 15px;
+width: 100%;
+@media (min-width:480px){
+width: 350px;
+}
+@media (min-width:768px){
+justify-content: center;
+width: 100%;
+}
 
 
  }
 
-&__item{
 
- }
 
 &__button {
   font-weight: 500;
