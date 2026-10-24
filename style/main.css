@@ -104,6 +104,18 @@ body {
     margin-right: 92px;
   }
 }
+.header__menu {
+  width: 40px;
+  height: 40px;
+}
+.header__btn {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
 .header__web {
   color: #2196f3;
 }
@@ -777,8 +789,7 @@ body {
 
 .model {
   border-radius: 4px;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #ffffff;
   position: relative;
@@ -787,6 +798,16 @@ body {
   transition-duration: 2500ms;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 480px) {
+  .model {
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .model {
+    width: 528px;
+  }
 }
 .model__close {
   border-radius: 50%;
@@ -823,8 +844,7 @@ body {
 .model__input {
   outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
-  height: 40px;
+  width: 100%;
   display: block;
   margin-top: 4px;
   padding-left: 42px;
@@ -1063,4 +1083,58 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   overflow: hidden;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 48px 0 48px 40px;
+}
+.menu__item {
+  width: 40px;
+  height: 40px;
+}
+.menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.menu__page {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #212121;
+}
+.menu__page:hover {
+  color: #2196f3;
+}
+.menu__contact {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.menu__items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 302px;
+  gap: 32px;
 }/*# sourceMappingURL=main.css.map */

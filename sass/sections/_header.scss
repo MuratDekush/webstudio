@@ -24,6 +24,7 @@ display: block;
 }
 
 
+
 &__webstudio {
   font-weight: 700;
   font-size: 24px;
@@ -42,7 +43,19 @@ margin-right: 92px;
 }
 }
 
+&__menu{
+  width: 40px;
+  height: 40px;
+}
 
+&__btn{
+  background-color: transparent;
+
+  @media (min-width:768px){
+display: none;
+  
+}
+}
 
 &__web {
   color:$accient-color;

@@ -4,17 +4,20 @@
 
 .model{
     border-radius: 4px;
-width: 528px;
-height: 581px;
+    width: 100%;
 box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 background: $additionaltext-color;
 position: relative;
 padding: 40px;
 transform: scale(1);
 @include animation (transform);
+@media (min-width: 480px){
+width: 450px;
+}
 
-
-
+@media (min-width: 1200px){
+width: 528px;
+}
 &__close{
     border-radius: 50%;
     width: 30px;
@@ -56,8 +59,7 @@ margin-bottom: 10px;
 &__input{
 outline: 1px solid $model-input-outline;
 border-radius: 4px;
-width: 448px;
-height: 40px;
+width: 100%;
 display: block;
 margin-top:4px ;
 padding-left:42px ;
