@@ -57,6 +57,7 @@ color: $text-color;
 font-size: 24px;
 letter-spacing: 0.02em;
 color: $desk-color;
+padding-bottom: 64px;
 }
 
 &__items{
@@ -65,11 +66,18 @@ color: $desk-color;
     margin-top: 302px;
      gap: 32px;
 }
-&__elem{
-   
+
+&__li{
+    display: flex;
+
 }
 
-
-
+&__link{
+    font-weight: 500;
+font-size: 18px;
+line-height: 122%;
+letter-spacing: 0.02em;
+color: $text-color;
+}
 }
 
