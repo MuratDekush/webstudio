@@ -25,6 +25,11 @@
         <a class="header__webstudio" href="./index.html">
           <span class="header__web">Web</span>Studio</a
         >
+        <button type="button" class="header__btn" data-menu-open>
+          <svg class="header__menu">
+            <use href="./img/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
@@ -300,7 +305,54 @@
     </form>
     </div>
       </div>
+       <div class="menu is-hidden" data-menu>
+      <button class="menu__button" type="button" data-menu-close>
+        <svg  class="menu__item">
+          <use href="./img/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+       <nav class="menu__navigation">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__page menu__page2" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__page menu__page1" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__page" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+         <ul class="menu__items">
+          <li class="menu__elem">
+            <a class="menu__contact" href="tell:+380961111111"
+              >
+              +38 096 111 11 11</a
+            >
+          </li>
+          
+          <li class="menu__elem">
+            <a
+              class="menu__mail"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+<ul class="menu__soc">
+  <li class="menu__li"><a class="menu__link" href="Instagram">Instagram</a></li>
+  <li class="menu__li"><a class="menu__link" href="Twitter">Twitter</a></li>
+  <li class="menu__li"><a class="menu__link" href="Facebook">Facebook</a></li>
+  <li class="menu__li"><a class="menu__link" href="LinkedIn">LinkedIn</a></li>
+</ul>
+    </div>
     </footer>
-    <script type="module" src="./js/menu.js"></script>
+     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/modul.js"></script>
   </body>
 </html>
