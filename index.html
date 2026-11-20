@@ -288,7 +288,14 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./img/workm.jpg" alt="Михайло" />
+            <picture>
+              <source srcset="./img/desktop/mihailo-desktop@1x.webp 1x,  ./img/desktop/mihailo-desktop@2x.webp 2x" media="(min-width:1200px)">
+          <source srcset="./img/tablet/mihailo-tablet@1x.webp 1x,./img/tablet/mihailo-tablet@2x.webp 2x" media="(min-width:768px)">
+          <source srcset="./img/phone/mihailo-phone@1x.webp 1x,./img/phone/mihailo-phone@2x.webp 2x " media="(max-width:767px)">     
+           <img class="team__img" src="./img/workm.jpg" alt="Михайло" />
+            </picture>
+            
+
             <div class="team__wrap">
               <p class="team__name">Михайло Эрмаков</p>
               <p class="team__work">UI Designer</p>
